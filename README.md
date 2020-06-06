@@ -30,6 +30,10 @@ First of all, this project is attempting to connect the point cloud and computer
 <li>Portable device / Use in actual life</li>
 </ul>
 
+![TFLite](img/TFLite.jpg)
+_This is the tensorflow app testing on android phone of using Tensorflow Lite. The current version was base on the previous model. The idealistic demonstration would be on the phone app._
+
+
 In general, I am going to reconstruct a 3D model/3D environment first. The goal of doing this is to ensure a sense of space and realistic scene recreation. Then, the CV and ML analyses are going to asset the process of determination. I am expecting that I can use machine learning to determine the behaviors of a particular action with the help of computer vision. After this previous two stages, the idealistic final step for this project is to be accessible on any sort of device including phone, PC and laptop.
 
 ### **Data**
@@ -43,10 +47,17 @@ Image data (include human behaviors and geographical environment)
 </ul>
 
 ![husky](img/dog.png)
-_This image is a 3D model/point cloud recreation_
+_This image is a 3D model/point cloud recreation._
 
 ![Original_image](img/Cyberpunk2077.jpg)
-_This image is an example of normal image before using CV_
+_This image is an example of normal image before using OpenCV._
+
+![2077.png](img/2077.png)
+_An alternative image using gray scale to exclude unnecessary information on the picture. By doing this, we can analysis this further._
+
+![2077binary](img/2077binary.png)
+_An alternative image without any color details, the binary image is consisted with only two colors. Everything is under a unity with units 1 or 0, which is why the name is binary image._
+
 
 ## **3. Project insight**
 In the original design, the data which flow in between the client and server contains a lot of photos. These photos are going to help the 3D model software to reconstruct the whole realistic scene. Under the most idealistic situation, the 3D model is expected to be a series of models, which would provide the most accurate documentation of the crime scene.
@@ -62,6 +73,10 @@ There are a lot of major libraries in the use of this project.
 <li> Tensorflow </li>
 </ul>
 Numpy is a Python library. It is widely used in multi-dimensional arrays and matrices. The current version of the ML/CV section is relying heavily on image recognition. The computer takes in the image and recognizes it in matrix form. It is somehow connecting to week 8, that Point Cloud visualization is another form of the matrix transformation. The values of the matrix are all calculated through their vector position and RGB color charts. In such a method, the programmer can extract and condense everything into a matrix formula, which is helpful for the computer to operate. OpenCV is another programming library, which is designed for real-time CV. The OpenCV package is crucial for our image processing phase because OpenCV allows an automatic classification to simplify the complicated images. Keras, on the other hand, was an API base on Tensorflow assisting the phase of recognition.
+
+![Potree](img/potree_ex.png)
+_Using Potree, we can publish our cloud points online._
+
 
 This project does not support responsive design. However, users have the ability to reshape or reform any aspect of this project if they have a profound understanding of CV/ML programming skills.
 
