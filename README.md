@@ -47,16 +47,16 @@ Image data (include human behaviors and geographical environment)
 </ul>
 
 ![husky](img/dog.png)
-_This image is a 3D model/point cloud recreation._
+_This image is a 3D model/point cloud recreation. Basically, it measures human observation about the three-dimensional structure. That is why a proper structure from motion requires a rotational view of 360 degrees. Eventually, an accurate 3D model can be created according to the change of depth in points, edges, or corners. In geosciences, structure from motion is frequently used in the mapping industry._
 
 ![Original_image](img/Cyberpunk2077.jpg)
-_This image is an example of normal image before using OpenCV._
+_This image is an example of a normal image before using OpenCV._
 
 ![2077.png](img/2077.png)
-_An alternative image using gray scale to exclude unnecessary information on the picture. By doing this, we can analysis this further._
+_An alternative image using grayscale to exclude unnecessary information on the picture. By doing this, we can analyze this further. To properly create an unbiased algorithm, it is important to exclude unnecessary elements. This exclusion can contribute to not an accurate prediction but also the speed of running ML._
 
 ![2077binary](img/2077binary.png)
-_An alternative image without any color details, the binary image is consisted with only two colors. Everything is under a unity with units 1 or 0, which is why the name is binary image._
+_An alternative image without any color details, the binary image has consisted of only two colors. Everything is under a unity with units 1 or 0, which is why the name is a binary image._
 
 
 ## **3. Project insight**
@@ -106,6 +106,7 @@ Furthermore, privacy is another significant aspect of ethical evaluation. Where 
 
 ### **Social Theory**
 Privacy and freedom of speech are highly valued spirits for humanity. These are considered as the most essential human rights of individuality and self-expression. In modern days, platforms use community guidelines to regulate hate speech, criminal behaviors, and conflicts. However, as technology becomes more and more portable and accessible in any location at any time. How should we evaluate privacy in common areas? Meanwhile, the government is unavoidably reaching further and further to the cutting edge of technology. The foundation of 5G and new public systems are hard to achieve without support from the government.
+
 
 ## _Code Inspiration / Open source materials:_
 [TensorFlow] (https://www.tensorflow.org/tensorboard/tensorboard_in_notebooks)
