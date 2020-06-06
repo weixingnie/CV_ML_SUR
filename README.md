@@ -35,12 +35,18 @@ In general, I am going to reconstruct a 3D model/3D environment first. The goal 
 ### **Data**
 There are going to be three types of data.
 <ul>
-<li>Image data (include human behaviors and geographical environment)</li>
-![husky](img/dog.png)
+<li>
+Image data (include human behaviors and geographical environment)
+</li>
 <li>ML / CV Model (training model and testing model)</li>
 <li>3D Model (scene reconstruction)</li>
 </ul>
 
+![husky](img/dog.png)
+_This image is a 3D model/point cloud recreation_
+
+![Original_image](img/Cyberpunk2077.jpg)
+_This image is an example of normal image before using CV_
 
 ## **3. Project insight**
 In the original design, the data which flow in between the client and server contains a lot of photos. These photos are going to help the 3D model software to reconstruct the whole realistic scene. Under the most idealistic situation, the 3D model is expected to be a series of models, which would provide the most accurate documentation of the crime scene.
@@ -88,5 +94,7 @@ Privacy and freedom of speech are highly valued spirits for humanity. These are 
 
 ## _Code Inspiration / Open source materials:_
 [TensorFlow] (https://www.tensorflow.org/tensorboard/tensorboard_in_notebooks)
+
 [TensorFlow Object detection] (https://www.tensorflow.org/lite/models/object_detection/overview)
+
 [OpenCV Extraction HR/VR lines] (https://docs.opencv.org/3.4/dd/dd7/tutorial_morph_lines_detection.html)
